@@ -1,0 +1,80 @@
+{
+  "name": "ink-box-list",
+  "version": "0.0.1",
+  "description": "Text input component for Ink",
+  "license": "MIT",
+  "repository": "elricb/ink-box-list",
+  "author": {
+    "name": "elricb",
+    "url": "github.com/elricb"
+  },
+  "main": "lib",
+  "engines": {
+    "node": ">=11"
+  },
+  "scripts": {
+    "build": "babel src/ -d lib/",
+    "release": "npm run build && npm run lint && npm test && npm publish",
+    "example": "node lib/example/index.js",
+    "lint": "xo",
+    "test": "ava",
+    "test-update-snapshots": "ava --update-snapshots"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "ink",
+    "component",
+    "jsx",
+    "react"
+  ],
+  "devDependencies": {
+    "@ava/babel": "^2.0",
+    "@babel/cli": "^7.15.4",
+    "@babel/core": "^7.15.5",
+    "@babel/plugin-transform-react-jsx": "^7.14.9",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-react": "^7.14.5",
+    "@elricb/prettier-config": "0.0.1",
+    "@elricb/xo-config": "0.0.1",
+    "ava": "^3.15.0",
+    "eslint-config-xo-react": "^0.25.0",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.4",
+    "husky": "^4.2.5",
+    "ink": "^3.0.5",
+    "ink-testing-library": "^2.0.0",
+    "ink-use-stdout-dimensions": "^1.0.5",
+    "prettier": "^2.4.1",
+    "pretty-quick": "^3.1.1",
+    "react": "^17.0.2",
+    "xo": "^0.44.0"
+  },
+  "peerDependencies": {
+    "ink": "^3.0.5",
+    "react": "^17.0.2"
+  },
+  "prettier": "@elricb/prettier-config",
+  "ava": {
+    "babel": {
+      "testOptions": {
+        "presets": [
+          "@babel/preset-react"
+        ]
+      }
+    }
+  },
+  "babel": {
+    "presets": [],
+    "plugins": [
+      "@babel/plugin-transform-react-jsx"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "dependencies": {}
+}
