@@ -4,6 +4,8 @@
 
 I made this for personal use to provide status overview lists. I'm sharing in case it's useful to anyone.
 
+This relies on all boxes being the same width and is not a true yoga line wrapping style tool.
+
 ## Install
 
 ```
