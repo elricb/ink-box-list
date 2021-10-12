@@ -43,6 +43,8 @@ const DevBoxes = () => (
 render(<DevBoxes />);
 ```
 
+<img src="media/demo.gif" width="900%">
+
 ## Props
 
 ### list
