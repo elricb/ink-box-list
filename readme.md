@@ -43,7 +43,7 @@ const DevBoxes = () => (
 render(<DevBoxes />);
 ```
 
-<img src="media/demo.gif" width="900%">
+<img src="media/demo.gif" width="90%" style="max-width:1580px;">
 
 ## Props
 
