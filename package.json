@@ -1,7 +1,7 @@
 {
   "name": "@elricb/ink-box-list",
   "version": "0.0.1",
-  "description": "Text input component for Ink",
+  "description": "List of wrapping boxes for Ink",
   "license": "MIT",
   "repository": {
     "type": "git",
