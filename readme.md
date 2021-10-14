@@ -1,4 +1,4 @@
-# ink-box-list
+# @elricb/ink-box-list
 
 > Box list component for [Ink](https://github.com/vadimdemedes/ink).
 
@@ -17,7 +17,7 @@ $ npm install @elricb/ink-box-list
 ```jsx
 import React from "react";
 import {render} from "ink";
-import BoxList from "ink-box-list";
+import BoxList from "@elricb/ink-box-list";
 
 const statusColor = {
   running: "green",
