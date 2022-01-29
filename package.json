@@ -29,31 +29,6 @@
     "jsx",
     "react"
   ],
-  "devDependencies": {
-    "@ava/babel": "^2.0",
-    "@babel/cli": "^7.15.4",
-    "@babel/core": "^7.15.5",
-    "@babel/plugin-transform-react-jsx": "^7.14.9",
-    "@babel/preset-env": "^7.15.6",
-    "@babel/preset-react": "^7.14.5",
-    "@elricb/prettier-config": "0.0.1",
-    "@elricb/xo-config": "0.0.1",
-    "ava": "^3.15.0",
-    "eslint-config-xo-react": "^0.25.0",
-    "eslint-plugin-react": "^7.20.0",
-    "eslint-plugin-react-hooks": "^4.0.4",
-    "ink": "^3.0.5",
-    "ink-testing-library": "^2.0.0",
-    "ink-use-stdout-dimensions": "^1.0.5",
-    "prettier": "^2.4.1",
-    "pretty-quick": "^3.1.1",
-    "react": "^17.0.2",
-    "xo": "^0.44.0"
-  },
-  "peerDependencies": {
-    "ink": "^3.0.5",
-    "react": "^17.0.2"
-  },
   "prettier": "@elricb/prettier-config",
   "ava": {
     "babel": {
@@ -70,7 +45,6 @@
       "@babel/plugin-transform-react-jsx"
     ]
   },
-  "dependencies": {},
   "bugs": {
     "url": "https://github.com/elricb/ink-box-list/issues"
   },
@@ -78,5 +52,31 @@
   "directories": {
     "lib": "lib",
     "test": "test"
+  },
+  "devDependencies": {
+    "@ava/babel": "^2.0",
+    "@babel/cli": "^7.16.8",
+    "@babel/core": "^7.16.12",
+    "@babel/plugin-transform-react-jsx": "^7.16.7",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@elricb/prettier-config": "0.0.1",
+    "@elricb/xo-config": "^0.0.4",
+    "ava": "^4.0.1",
+    "eslint-config-xo-react": "^0.26.0",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "ink": "^3.2.0",
+    "ink-testing-library": "^2.0.0",
+    "ink-use-stdout-dimensions": "^1.0.5",
+    "prettier": "^2.5.1",
+    "pretty-quick": "^3.1.3",
+    "react": "^17.0.2",
+    "xo": "^0.47.0"
+  },
+  "peerDependencies": {
+    "ink": ">=2",
+    "prop-types": ">=14",
+    "react": ">=16"
   }
 }
