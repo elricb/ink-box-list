@@ -10,7 +10,7 @@
   "author": "elricb (github.com/elricb)",
   "main": "lib",
   "engines": {
-    "node": ">=11"
+    "node": ">=12"
   },
   "scripts": {
     "build": "babel src/ -d lib/",
@@ -75,7 +75,7 @@
     "xo": "^0.47.0"
   },
   "peerDependencies": {
-    "ink": ">=2",
+    "ink": ">=3",
     "prop-types": ">=14",
     "react": ">=16"
   }

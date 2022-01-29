@@ -6,6 +6,10 @@ I made this for personal use to provide status overview lists. I'm sharing in ca
 
 This relies on all boxes being the same width and is not a true yoga line wrapping style tool.
 
+## Requirements
+
+* [node](https://nodejs.org/en/download/) - recommended lts version >= 12
+
 ## Install
 
 ```
