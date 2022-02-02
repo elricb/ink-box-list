@@ -3,8 +3,6 @@ const {render, Box, Text} = require("ink");
 
 const BoxList = require("../component/box-list");
 
-const contents = require("./contents");
-
 const statusColor = {
   running: "green",
   stopped: "red",
@@ -33,4 +31,4 @@ const Example5 = () => (
   </Box>
 );
 
-render(<Example5/>);
+render(<Example5 />);

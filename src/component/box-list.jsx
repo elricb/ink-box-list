@@ -1,10 +1,9 @@
-const React = require("react");
-const {Box} = require("ink");
-const PropTypes = require("prop-types");
-
-const useBoxWrap = require("../effect/use-box-wrap");
-const mapIntoGroups = require("../function/map-into-groups");
-const BoxListChild = require("./box-list-child");
+import React from "react";
+import {Box} from "ink";
+import PropTypes from "prop-types";
+import useBoxWrap from "../effect/use-box-wrap.js";
+import mapIntoGroups from "../function/map-into-groups.js";
+import BoxListChild from "./box-list-child.jsx";
 
 const BoxList = ({
   width,
@@ -60,4 +59,4 @@ BoxList.propTypes = {
   width: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
 };
 
-module.exports = BoxList;
+export default BoxList;

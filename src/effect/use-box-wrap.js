@@ -1,8 +1,8 @@
-const {useStdout} = require("ink");
-const {useEffect, useState} = require("react");
-
-const parseChildWidth = require("../function/parse-child-width");
-const maxLengthDoubleIterator = require("../function/max-length-double-iterator");
+import process from "process";
+import {useStdout} from "ink";
+import {useEffect, useState} from "react";
+import parseChildWidth from "../function/parse-child-width";
+import maxLengthDoubleIterator from "../function/max-length-double-iterator";
 
 const filterReturnArray = function (
   baseColumns,
@@ -20,8 +20,9 @@ const filterReturnArray = function (
   return [columns, width, Math.trunc(columns / width)];
 };
 
-function useBoxWrap(defaultColumns, defaultBoxWidth, list) {
-  const {stdout} = useStdout();
+const useBoxWrap = function (defaultColumns, defaultBoxWidth, list) {
+  // Sometimes useStdout returns undefined
+  const {stdout = process.stdout} = useStdout();
   const [dimensions, setDimensions] = useState(
     filterReturnArray(stdout.columns, defaultColumns, defaultBoxWidth, list)
   );
@@ -44,6 +45,6 @@ function useBoxWrap(defaultColumns, defaultBoxWidth, list) {
   }, [stdout, defaultColumns, defaultBoxWidth, list]);
 
   return dimensions;
-}
+};
 
-module.exports = useBoxWrap;
+export default useBoxWrap;

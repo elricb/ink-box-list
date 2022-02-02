@@ -8,12 +8,14 @@
     "url": "git+https://github.com/elricb/ink-box-list.git"
   },
   "author": "elricb (github.com/elricb)",
-  "main": "lib",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "engines": {
     "node": ">=12"
   },
   "scripts": {
-    "build": "babel src/ -d lib/",
+    "build": "rollup -c",
+    "start": "rollup -c -w",
     "release": "npm run build && npm run lint && npm test && npm publish",
     "example": "node lib/example/index.js",
     "lint": "xo",
@@ -21,7 +23,8 @@
     "test-update-snapshots": "ava --update-snapshots"
   },
   "files": [
-    "lib"
+    "lib",
+    "dist"
   ],
   "keywords": [
     "ink",
@@ -61,17 +64,22 @@
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "@elricb/prettier-config": "0.0.1",
-    "@elricb/xo-config": "^0.0.4",
+    "@elricb/xo-config": "^0.0.5",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.1.3",
     "ava": "^4.0.1",
     "eslint-config-xo-react": "^0.26.0",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
-    "ink": "^3.2.0",
     "ink-testing-library": "^2.0.0",
     "ink-use-stdout-dimensions": "^1.0.5",
+    "parcel": "^2.2.1",
     "prettier": "^2.5.1",
-    "pretty-quick": "^3.1.3",
-    "react": "^17.0.2",
+    "rollup": "^2.66.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-terser": "^7.0.2",
     "xo": "^0.47.0"
   },
   "peerDependencies": {

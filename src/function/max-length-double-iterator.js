@@ -1,4 +1,4 @@
-const maxLengthFlatIterator = require("./max-length-flat-iterator");
+import maxLengthFlatIterator from "./max-length-flat-iterator";
 
 const maxLengthDoubleIterator = (list, d = 0) =>
   list === null
@@ -15,4 +15,4 @@ const maxLengthDoubleIterator = (list, d = 0) =>
       )
     : d;
 
-module.exports = maxLengthDoubleIterator;
+export default maxLengthDoubleIterator;

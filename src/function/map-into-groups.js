@@ -24,7 +24,7 @@ const mapArrayGroup = (list, count) => f => {
   return a;
 };
 
-module.exports =
+const mapIntoGroups =
   (list, count, d = []) =>
   f =>
     list === null
@@ -36,3 +36,5 @@ module.exports =
       : typeof list === "object"
       ? mapObjectGroup(list, count)(f)
       : d;
+
+export default mapIntoGroups;

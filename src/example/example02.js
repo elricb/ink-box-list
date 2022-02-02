@@ -21,4 +21,4 @@ const Example2 = () => (
   </Box>
 );
 
-render(<Example2/>);
+render(<Example2 />);

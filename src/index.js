@@ -1,10 +1,19 @@
-module.exports = require("./component/box-list");
+import BoxList from "./component/box-list.jsx";
+import BoxListChild from "./component/box-list-child.jsx";
+import useBoxWrap from "./effect/use-box-wrap.js";
+import mapIterable from "./function/map-iterable.js";
+import mapIntoGroups from "./function/map-into-groups.js";
+import maxLengthFlatIterator from "./function/max-length-flat-iterator.js";
+import maxLengthDoubleIterator from "./function/max-length-double-iterator.js";
 
-module.exports.useBoxWrap = require("./effect/use-box-wrap");
+export {
+  BoxList,
+  BoxListChild,
+  useBoxWrap,
+  mapIterable,
+  mapIntoGroups,
+  maxLengthFlatIterator,
+  maxLengthDoubleIterator
+};
 
-module.exports.BoxListChild = require("./component/box-list-child");
-
-module.exports.mapIterable = require("./function/map-iterable");
-module.exports.mapIntoGroups = require("./function/map-into-groups");
-module.exports.maxLengthFlatIterator = require("./function/max-length-flat-iterator");
-module.exports.maxLengthDoubleIterator = require("./function/max-length-double-iterator");
+export default BoxList;

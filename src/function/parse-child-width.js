@@ -1,5 +1,5 @@
 /// on failure returns 0
-module.exports = function (x, whole = 100) {
+const parseChildWidth = function (x, whole = 100) {
   const f = Number.parseFloat(x);
 
   if (Number.isNaN(f) || !x) {
@@ -12,3 +12,5 @@ module.exports = function (x, whole = 100) {
 
   return f > whole ? 0 : f;
 };
+
+export default parseChildWidth;

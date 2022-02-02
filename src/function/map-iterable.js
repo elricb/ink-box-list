@@ -1,4 +1,4 @@
-module.exports = function (list, df = []) {
+const mapIterable = function (list, df = []) {
   return function (f) {
     const map = [];
 
@@ -32,3 +32,5 @@ module.exports = function (list, df = []) {
     return df;
   };
 };
+
+export default mapIterable;

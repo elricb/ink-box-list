@@ -3,8 +3,6 @@ const {render, Box, Text} = require("ink");
 
 const BoxList = require("../component/box-list");
 
-const contents = require("./contents");
-
 const Example = () => (
   <Box flexDirection="column" marginBottom={1}>
     <Box flexDirection="column" marginTop={1}>

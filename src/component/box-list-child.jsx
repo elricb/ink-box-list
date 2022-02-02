@@ -1,8 +1,7 @@
-const React = require("react");
-const {Box, Text} = require("ink");
-const PropTypes = require("prop-types");
-
-const mapIterable = require("../function/map-iterable");
+import React from "react";
+import {Box, Text} from "ink";
+import PropTypes from "prop-types";
+import mapIterable from "../function/map-iterable";
 
 const BoxListChild = ({align, width, content, extendProps}) => (
   <Box
@@ -29,4 +28,4 @@ BoxListChild.propTypes = {
   width: PropTypes.oneOfType([PropTypes.number, PropTypes.string])
 };
 
-module.exports = BoxListChild;
+export default BoxListChild;

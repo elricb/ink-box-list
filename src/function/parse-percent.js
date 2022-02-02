@@ -1,4 +1,4 @@
-module.exports = function (x, whole = 100) {
+const parsePercent = function (x, whole = 100) {
   const f = Number.parseFloat(x);
 
   if (!x || Number.isNaN(x)) {
@@ -7,3 +7,5 @@ module.exports = function (x, whole = 100) {
 
   return (f / 100) * whole;
 };
+
+export default parsePercent;

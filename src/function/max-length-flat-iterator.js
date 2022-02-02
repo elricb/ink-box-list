@@ -5,4 +5,4 @@ const maxLengthFlatIterator = list =>
     ? Object.keys(list).reduce((acc, cur) => Math.max(acc, list[cur].length), 0)
     : 0;
 
-module.exports = maxLengthFlatIterator;
+export default maxLengthFlatIterator;
